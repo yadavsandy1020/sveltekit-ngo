@@ -4,9 +4,9 @@
 	export let data;
 </script>
 
-<div class="container">
+<div class="">
 	<div class="row">
-		<div class="col-6">
+		<div class="col-lg-6 col-sm-12">
 			<h4>Contact us</h4>
 			<span class="d-inline-block">
 				<h5>Address:</h5>

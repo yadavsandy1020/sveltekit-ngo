@@ -4,7 +4,7 @@
 	export let data;
 </script>
 
-<div class="accordion" id="accordionPanelsStayOpen">
+<div class="accordion about-us" id="accordionPanelsStayOpen">
 	{#each data.about as accordion}
 		<div class="accordion-item">
 			<h2 class="accordion-header" id="{accordion.mainHeadingId}}">
@@ -36,3 +36,6 @@
 		</div>
 	{/each}
 </div>
+
+<style>
+</style>

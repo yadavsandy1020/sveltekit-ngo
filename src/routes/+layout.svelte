@@ -19,6 +19,7 @@
 		display: flex;
 		flex-direction: column;
 		min-height: 100vh;
+		justify-content: space-between;
 	}
 
 	main {
@@ -26,6 +27,6 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		padding-top: 2rem;
+		padding: 2em;
 	}
 </style>
