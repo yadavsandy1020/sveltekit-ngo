@@ -1,4 +1,4 @@
-<div class="container-fluid social bg-white">
+<!-- <div class="container-fluid social bg-white">
 	<div class="row">
 		<div class="col-lg-6" />
 		<div class="col-lg-6 d-flex justify-content-around align-items-center">
@@ -8,9 +8,9 @@
 			<i class="fa-brands fa-youtube  fa-2x" />
 		</div>
 	</div>
-</div>
-<hr class="dropdown-divider m-0" />
-<nav class="navbar sticky-top  navbar-expand-lg navbar-light bg-white">
+</div> -->
+<!-- <hr class="dropdown-divider m-0" /> -->
+<nav class="navbar  navbar-expand-lg navbar-light bg-white">
 	<div class="container">
 		<a href="/" class="navbar-brand"
 			><img

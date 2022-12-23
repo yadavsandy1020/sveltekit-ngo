@@ -24,64 +24,130 @@
 </script>
 
 <!-- svelte-ignore a11y-missing-attribute -->
-
-<footer class="bg-dark">
-	<div class="container">
-		<div class="row mt-3">
-			<div class="col-sm-12 col-lg-3 justify-content-center align-items-center">
-				<h4>Popular News</h4>
-				{#each news as { heading, img, publishedOn }}
-					<h5>{heading}</h5>
-					<div class="flex-column">
-						{#each img as { url }}
-							<img class="p-1" src={url} alt="Some txt" />
-						{/each}
+<!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="my-5">
+	<!-- Footer -->
+	<footer class="text-center text-lg-start text-white" style="background-color: black">
+		<!-- Grid container -->
+		<div class="container p-4 pb-0">
+			<!-- Section: Links -->
+			<section class="">
+				<!--Grid row-->
+				<div class="row">
+					<!-- Grid column -->
+					<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+						<h6 class="text-uppercase mb-4 font-weight-bold">Company name</h6>
+						<p>
+							Here you can use rows and columns to organize your footer content. Lorem ipsum dolor
+							sit amet, consectetur adipisicing elit.
+						</p>
 					</div>
+					<!-- Grid column -->
 
-					<p>{publishedOn}</p>
-				{/each}
-			</div>
-			<div class="col-sm-12 col-lg-3">
-				<h4>Our Photos</h4>
-				{#each news as { img, publishedOn }}
-					<div class="flex-column">
-						{#each img as { url }}
-							<img class="p-1" src={url} alt="Some txt" />
-						{/each}
+					<hr class="w-100 clearfix d-md-none" />
+
+					<!-- Grid column -->
+					<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+						<h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+						<p>
+							<a class="text-white">MDBootstrap</a>
+						</p>
+						<p>
+							<a class="text-white">MDWordPress</a>
+						</p>
+						<p>
+							<a class="text-white">BrandFlow</a>
+						</p>
+						<p>
+							<a class="text-white">Bootstrap Angular</a>
+						</p>
 					</div>
+					<!-- Grid column -->
 
-					<p>{publishedOn}</p>
-				{/each}
-			</div>
-			<div class="col-sm-12 col-lg-3">
-				<h4>Contact us</h4>
-				<span class="d-inline-block">
-					<h5>Address:</h5>
-					<p>{contactData.address}</p>
-				</span>
-				<span class="d-inline-block">
-					<h5>Phone:</h5>
-					<p>{contactData.phoneNumber}</p>
-				</span>
+					<hr class="w-100 clearfix d-md-none" />
 
-				<span class="d-inline-block">
-					<h5>Email:</h5>
-					<p>{contactData.email}</p>
-				</span>
-			</div>
-			<div class="col-sm-12 col-lg-3 d-flex align-items-center">
-				<iframe
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3551.5283834970764!2d78.58954711504911!3d27.1081626830438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39744bc582e36eb9%3A0x294999efb740d8b0!2sRoyal%20Krishna%20Group!5e0!3m2!1sen!2sin!4v1653729343731!5m2!1sen!2sin"
-					width="100%"
-					style="border: 10px; padding-left: 1%;padding-right: 1%"
-					loading="lazy"
-					referrerpolicy="no-referrer-when-downgrade"
-				/>
-			</div>
+					<!-- Grid column -->
+					<hr class="w-100 clearfix d-md-none" />
+
+					<!-- Grid column -->
+					<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+						<h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+						<p><i class="fas fa-home mr-3" /> New York, NY 10012, US</p>
+						<p><i class="fas fa-envelope mr-3" /> info@gmail.com</p>
+						<p><i class="fas fa-phone mr-3" /> + 01 234 567 88</p>
+						<p><i class="fas fa-print mr-3" /> + 01 234 567 89</p>
+					</div>
+					<!-- Grid column -->
+
+					<!-- Grid column -->
+					<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+						<h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+
+						<!-- Facebook -->
+						<a
+							class="btn btn-primary btn-floating m-1"
+							style="background-color: #3b5998"
+							href="#!"
+							role="button"><i class="fab fa-facebook-f" /></a
+						>
+
+						<!-- Twitter -->
+						<a
+							class="btn btn-primary btn-floating m-1"
+							style="background-color: #55acee"
+							href="#!"
+							role="button"><i class="fab fa-twitter" /></a
+						>
+
+						<!-- Google -->
+						<a
+							class="btn btn-primary btn-floating m-1"
+							style="background-color: #dd4b39"
+							href="#!"
+							role="button"><i class="fab fa-google" /></a
+						>
+
+						<!-- Instagram -->
+						<a
+							class="btn btn-primary btn-floating m-1"
+							style="background-color: #ac2bac"
+							href="#!"
+							role="button"><i class="fab fa-instagram" /></a
+						>
+
+						<!-- Linkedin -->
+						<a
+							class="btn btn-primary btn-floating m-1"
+							style="background-color: #0082ca"
+							href="#!"
+							role="button"><i class="fab fa-linkedin-in" /></a
+						>
+						<!-- Github -->
+						<a
+							class="btn btn-primary btn-floating m-1"
+							style="background-color: #333333"
+							href="#!"
+							role="button"><i class="fab fa-github" /></a
+						>
+					</div>
+				</div>
+				<!--Grid row-->
+			</section>
+			<!-- Section: Links -->
 		</div>
-	</div>
-</footer>
+		<!-- Grid container -->
 
+		<!-- Copyright -->
+		<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+			© 2020 Copyright:
+			<a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+		</div>
+		<!-- Copyright -->
+	</footer>
+	<!-- Footer -->
+</div>
+
+<!-- End of .container -->
 <style>
 	footer {
 		position: relative;
