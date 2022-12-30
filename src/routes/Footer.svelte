@@ -25,7 +25,7 @@
 
 <!-- svelte-ignore a11y-missing-attribute -->
 <!-- Remove the container if you want to extend the Footer to full width. -->
-<div class="my-5">
+<div class="pt-3">
 	<!-- Footer -->
 	<footer class="text-center text-lg-start text-white" style="background-color: black">
 		<!-- Grid container -->

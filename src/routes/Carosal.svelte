@@ -15,12 +15,12 @@
 	];
 </script>
 
-<div class="container">
+<div>
 	<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
 		<div class="carousel-inner">
 			{#each photos as { url }, index}
 				<div class={`carousel-item ${index === 0 ? 'active' : ''}`} data-bs-interval="5000">
-					<img src={url} class="d-block w-100" alt="..." />
+					<img src={url} class="d-block w-100" height="70%" alt="..." />
 				</div>
 			{/each}
 		</div>

@@ -10,7 +10,7 @@
 	</div>
 </div> -->
 <!-- <hr class="dropdown-divider m-0" /> -->
-<nav class="navbar  navbar-expand-lg navbar-light bg-white">
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
 	<div class="container">
 		<a href="/" class="navbar-brand"
 			><img
@@ -35,15 +35,15 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarText">
 			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-				<li class="nav-item">
-					<a class="nav-link active" aria-current="page" href="/">Home</a>
+				<li class="nav-item px-2">
+					<a class="nav-link active text-decoration-none" aria-current="page" href="/">Home</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="/users">Users</a>
+				<li class="nav-item px-2">
+					<a class="nav-link text-decoration-none" href="/users">Users</a>
 				</li>
-				<li class="nav-item dropdown">
+				<li class="nav-item px-2 dropdown">
 					<a
-						class="nav-link dropdown-toggle"
+						class="nav-link dropdown-toggle text-decoration-none"
 						href="/"
 						id="navbarScrollingDropdown"
 						role="button"
@@ -53,20 +53,22 @@
 						Gallery
 					</a>
 					<ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-						<li><a class="dropdown-item" href="/gallery/photos">Photos</a></li>
-						<li><a class="dropdown-item" href="/gallery/videos">Videos</a></li>
-						<li><a class="dropdown-item" href="/gallery/in-news">In News</a></li>
+						<li><a class="dropdown-item text-decoration-none" href="/gallery/photos">Photos</a></li>
+						<li><a class="dropdown-item text-decoration-none" href="/gallery/videos">Videos</a></li>
+						<li>
+							<a class="dropdown-item text-decoration-none" href="/gallery/in-news">In News</a>
+						</li>
 					</ul>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="/about">About</a>
+				<li class="nav-item px-2">
+					<a class="nav-link text-decoration-none" href="/about">About</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="/contact-us">Contact us</a>
+				<li class="nav-item px-2">
+					<a class="nav-link text-decoration-none" href="/contact-us">Contact us</a>
 				</li>
-				<li class="nav-item">
-					<button type="button" class="btn btn-info btn-sm"
-						><a class="nav-link" href="/donate">Donate</a></button
+				<li class="nav-item px-2">
+					<button type="button" class="btn btn-info btn-sm btn-round"
+						><a class="nav-link text-decoration-none" href="/donate">Donate</a></button
 					>
 				</li>
 			</ul>
@@ -78,22 +80,19 @@
 	a {
 		text-transform: uppercase;
 	}
-	.social {
-		padding: 1rem;
+	.navbar-collapse {
+		flex-grow: 0 !important;
 	}
-	i {
-		cursor: pointer;
+	.btn-info {
+		background-color: #84366d;
 	}
-	.fa-twitter {
-		color: #55acee;
+	.btn-info > a {
+		color: white !important;
 	}
-	.fa-youtube {
-		color: red;
-	}
-	.fa-instagram {
-		color: #c13584;
-	}
-	.fa-facebook {
-		color: #3b5998;
+	a {
+		font-family: Montserrat;
+		font-size: 16px;
+		text-transform: uppercase;
+		font-weight: 700;
 	}
 </style>

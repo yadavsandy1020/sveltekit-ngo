@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>Royal Krishna Group Foundation</title>
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 <div class="container-fluid text-center">
@@ -45,7 +45,7 @@
 	/* Set gray background color and 100% height */
 	.sidenav {
 		padding-top: 20px;
-		background-color: #f1f1f1;
+		/* background-color: #f1f1f1; */
 		height: 100%;
 	}
 
